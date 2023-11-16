@@ -20,7 +20,7 @@ def hello(app, card):
     Then transition to the "say_hello" card.
     """
     app.datastore["name"] = card.get_by_id("name").value
-    app.datastore["age"] = card.get_by_id("age").value
+    app.datastore["date"] = card.get_by_id("date").value
     app.datastore["color"] = card.get_by_id("color").value
     return "say_hello"
 
